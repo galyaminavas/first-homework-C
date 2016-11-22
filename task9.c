@@ -7,12 +7,15 @@ int main()
     int i;
     int y;
     bool a[10000];
+
     printf("Enter N\n");
     scanf("%d", &n);
+
     for (i = 1; i <= n; i++)
     {
         a[i] = true;
     }
+
     for (i = 2; i <= n / 2; i++)
     {
         y = i * 2;
@@ -23,6 +26,7 @@ int main()
         }
         y = 0;
     }
+
     printf("Prime numbers which are not greater than N:\n");
     for (i = 1; i <= n; i++)
     {
@@ -31,4 +35,6 @@ int main()
             printf("%d ", i);
         }
     }
+
+    return 0;
 }

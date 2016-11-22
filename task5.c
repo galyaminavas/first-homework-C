@@ -13,6 +13,7 @@ int main()
     scanf("%d", &m);
     printf("Enter n\n");
     scanf("%d", &n);
+    printf("Enter the array\n");
     for (i = 1; i <= m + n; i++)
     {
         scanf("%d", &arr[i]);
@@ -27,9 +28,12 @@ int main()
         }
         arr[j] = a;
     }
+
     printf("Now array is:\n");
     for(i = 1; i <= m + n; i++)
     {
         printf("%d ", arr[i]);
     }
+
+    return 0;
 }

@@ -6,8 +6,10 @@ int main()
     char s[1000];
     int d = 0;
     int i;
+
     printf("Enter the string to check for brackets balance\n");
     fgets(s, 1000, stdin);
+
     for (i = 0; i < strlen(s); i++)
     {
         if (s[i] == '(')
@@ -23,13 +25,15 @@ int main()
             break;
         }
     }
+
     if (d == 0)
     {
-        printf("brackets balance is correct");
+        printf("Brackets balance is correct");
     }
     else
     {
-        printf("brackets balance is not correct");
+        printf("Brackets balance is not correct");
     }
 
+    return 0;
 }

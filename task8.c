@@ -18,16 +18,18 @@ int main()
     int n = strlen(s1);
     int i;
     int j;
+    bool flag;
     s1[n - 1] = 0;
 	n = n - 1;
+
 	for (i = 0; i < m - n + 1; i++)
 	{
-		bool flag = 0;
+        flag = false;
 		for (j = i; j < n + i; j++)
         {
             if (s[j] != s1[j - i])
 			{
-				flag = 1;
+				flag = true;
 				break;
 			}
         }
@@ -36,5 +38,8 @@ int main()
             num++;
         }
     }
+
 	printf("S contains S1 as a substring %d times", num);
+
+	return 0;
 }

@@ -28,4 +28,6 @@ int main()
     }
 
     printf("Number of lucky tickets is %d", sum);
+
+    return 0;
 }
